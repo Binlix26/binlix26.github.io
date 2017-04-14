@@ -1,0 +1,333 @@
+$color-main: #010101;
+$color-white: #ffffff;
+$color-name: #FFA400;
+$color-blue: #009FFD;
+$font-special: 'Oleo Script', cursive;
+
+// two google fonts 
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+* {
+    transition: all 0.3s;// slightly delay transition effect (hover over)
+}
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative; // for scrollspy
+}
+
+//Top navigation
+.navbar-inverse {
+    background: $color-main;
+    
+    .navbar-nav>li>a{
+        font-size: 16px;
+        color: $color-white;
+        font-weight: bold;
+        
+        &:hover {
+            color: $color-main;
+            background: $color-white;
+        }
+    }
+    // overwritten the css of bootstrap
+    .navbar-nav>.active>a,
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        color: $color-main;
+        background: $color-white;
+    }
+    // overwritten the css of bootstrap
+    .navbar-nav>.open>a,
+    .navbar-nav>.open>a:hover,
+    .navbar-nav>.open>a:focus {
+        color: $color-main;
+        background: $color-white;
+    }
+}
+
+.navbar-brand {
+    color: $color-name!important;// overwritten bootstrap
+    font-family: $font-special;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+//welcome area
+#welcome {
+    margin-top: 51px;
+    padding-top: 70px;
+    text-align: center;
+    min-height: 500px;// specify min height
+    background: url('../image/home-background.jpg') center center;
+    background-size: cover;//the image will cover the whole background
+    background-attachment: fixed;
+    color: $color-white;
+    font-weight: bold;
+    
+    h1 {
+        font-family: $font-special;
+        text-shadow: 2px 2px 4px $color-main;
+        
+        span {
+            font-size: 37px;
+            color: $color-name;
+        }
+    }
+    
+    hr {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    span {
+        font-size: 30px;
+        text-shadow: 2px 2px 4px $color-main;
+    }
+    
+    h2 {
+        margin: 50px auto;
+        border-radius: 10px;
+        background: rgba(1,1,1,0.5);//opacity 0.5
+        padding: 12px 0;
+        max-width: 600px;
+        min-height: 70px;
+        font-weight: bold;
+        font-size: 40px;
+        text-shadow: 2px 2px 4px $color-main;
+    }
+    
+    a {
+        max-width: 240px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+#footprint {
+    text-align: center;
+    padding: 20px 0 30px;
+    
+    .num {
+        font-size: 70px;
+        display: block;
+        font-weight: bold;
+    }
+
+    .txt {
+        font-size: 30px;
+        top: -10px;
+        position: relative;
+    }
+}
+
+//for 3 sections's title
+.section-titles {
+    text-align: center;
+    font-family: $font-special;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 60px auto;
+}
+
+#about {
+    background: $color-main;
+    color: $color-white;
+    padding: 0 0 60px;
+    font-size: 30px;
+    p {
+        font-size: 30px;
+        margin: 0 0 30px;
+        
+        b{
+            color: $color-name;
+        }
+    }
+    
+    img {
+        border-radius: 50%;
+        max-width: 250px;
+        max-height: 250px;
+       
+    }
+    
+    span {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+#portfolio {
+    padding-bottom: 50px;
+    
+    h2 {
+        color: $color-main;
+    }
+    
+    text-align: center;
+
+    .project-wrap {
+        a {
+            display: block;// really important to let anchor has backgound
+            background: $color-blue;
+            border-radius: 10px;
+            color: $color-white;
+            max-width: 400px;
+            margin: 20px auto;
+            img {
+                width: 100%;
+                min-height: 250px;
+                border-radius: 10px 10px 0 0;
+            }
+            
+            span {
+                transition: all 0s;// overwritten the initial setting, '0s' is necessary!!! '0' does not work
+            }
+
+            .project-caption-top {
+                display: block;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 15px 0 0 0;
+            }
+
+            .project-caption-down {
+                display: block;
+                font-size: 18px;
+                font-style: italic;
+                padding: 5px 0 15px 0;
+            }
+
+            &:hover {
+                text-decoration: none;
+                background: $color-name;
+                color: $color-main;
+                box-shadow: 0px 0px 7px 1px $color-main;
+            }
+        }
+
+    }
+    
+    .coming-soon a{
+        cursor: default;
+        background: #ddd;
+        color: $color-main;
+        
+        &:hover, &:focus {
+            cursor: default;
+            text-decoration: none;
+            box-shadow: none;
+            background: #ddd;
+            color: $color-main;
+        }
+    }
+}
+
+#contacts {
+    min-height: 400px;
+    color: $color-white;
+    background: url('../image/contact.jpg') center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    
+    .social {
+        margin-bottom: 40px;
+        .email {
+            font-size: 30px;
+            margin-bottom: 5px;
+            a {
+                text-decoration: none;
+                color: $color-white;
+                font-weight: bold;
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+        
+        .soc {
+            display: inline-block;
+            font-size: 20px;
+            background: $color-white;
+            border-radius: 10px;
+            margin: 20px 10px 10px 10px;
+            font-weight: bold;
+            
+            &:hover, &:focus {
+                background: $color-blue;
+                color: $color-white;
+            }
+            
+            a {
+                display: block;// is very important to make the setting of 'padding' happens
+                text-decoration: none;
+                color: $color-main;
+                padding: 7px 12px;// here, needs 'a' to be a block
+                
+                i {
+                    transition: all 0s;
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .copy {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        color: $color-main;
+        margin: 10px 0;
+    }
+}
+
+#scroll-to-top {
+//    display: none;
+    position: fixed;
+    opacity: 0.6;
+    background: $color-blue;
+    border-radius: 10px;
+    width: 47px;
+    height: 45px;
+    right: 20px;
+    bottom: 20px;
+    padding: 7px 10px 10px;
+    transition: all 0s;
+    i{
+        color: $color-white;
+        transition: all 0s;
+    }
+    
+    &:hover {
+        opacity: 1;
+    }
+    
+}
+
+//for #about and #portfolio
+@media only screen and (min-width:768px) and (max-width:992px) {
+    #about {
+        p {
+            font-size: 25px;
+        }
+    }
+    
+    #portfolio {
+        .project-caption-top {
+             font-size: 17px;
+        }
+
+        .project-caption-down {
+             font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
+* {
+  transition: all 0.3s; }
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: relative; }
+
+.navbar-inverse {
+  background: #010101; }
+  .navbar-inverse .navbar-nav > li > a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: #010101;
+      background: #ffffff; }
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #010101;
+    background: #ffffff; }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #010101;
+    background: #ffffff; }
+
+.navbar-brand {
+  color: #FFA400 !important;
+  font-family: "Oleo Script", cursive;
+  font-size: 23px;
+  font-weight: bold; }
+
+#welcome {
+  margin-top: 51px;
+  padding-top: 70px;
+  text-align: center;
+  min-height: 500px;
+  background: url("../image/home-background.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-weight: bold; }
+  #welcome h1 {
+    font-family: "Oleo Script", cursive;
+    text-shadow: 2px 2px 4px #010101; }
+    #welcome h1 span {
+      font-size: 37px;
+      color: #FFA400; }
+  #welcome hr {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  #welcome span {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #010101; }
+  #welcome h2 {
+    margin: 50px auto;
+    border-radius: 10px;
+    background: rgba(1, 1, 1, 0.5);
+    padding: 12px 0;
+    max-width: 600px;
+    min-height: 70px;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #010101; }
+  #welcome a {
+    max-width: 240px;
+    font-size: 30px;
+    font-weight: bold; }
+
+#footprint {
+  text-align: center;
+  padding: 20px 0 30px; }
+  #footprint .num {
+    font-size: 70px;
+    display: block;
+    font-weight: bold; }
+  #footprint .txt {
+    font-size: 30px;
+    top: -10px;
+    position: relative; }
+
+.section-titles {
+  text-align: center;
+  font-family: "Oleo Script", cursive;
+  font-weight: 600;
+  font-size: 50px;
+  margin: 60px auto; }
+
+#about {
+  background: #010101;
+  color: #ffffff;
+  padding: 0 0 60px;
+  font-size: 30px; }
+  #about p {
+    font-size: 30px;
+    margin: 0 0 30px; }
+    #about p b {
+      color: #FFA400; }
+  #about img {
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 250px; }
+  #about span {
+    text-align: center;
+    display: block;
+    margin: 10px auto; }
+
+#portfolio {
+  padding-bottom: 50px;
+  text-align: center; }
+  #portfolio h2 {
+    color: #010101; }
+  #portfolio .project-wrap a {
+    display: block;
+    background: #009FFD;
+    border-radius: 10px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 20px auto; }
+    #portfolio .project-wrap a img {
+      width: 100%;
+      min-height: 250px;
+      border-radius: 10px 10px 0 0; }
+    #portfolio .project-wrap a span {
+      transition: all 0s; }
+    #portfolio .project-wrap a .project-caption-top {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 15px 0 0 0; }
+    #portfolio .project-wrap a .project-caption-down {
+      display: block;
+      font-size: 18px;
+      font-style: italic;
+      padding: 5px 0 15px 0; }
+    #portfolio .project-wrap a:hover {
+      text-decoration: none;
+      background: #FFA400;
+      color: #010101;
+      box-shadow: 0px 0px 7px 1px #010101; }
+  #portfolio .coming-soon a {
+    cursor: default;
+    background: #ddd;
+    color: #010101; }
+    #portfolio .coming-soon a:hover, #portfolio .coming-soon a:focus {
+      cursor: default;
+      text-decoration: none;
+      box-shadow: none;
+      background: #ddd;
+      color: #010101; }
+
+#contacts {
+  min-height: 400px;
+  color: #ffffff;
+  background: url("../image/contact.jpg") center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center; }
+  #contacts .social {
+    margin-bottom: 40px; }
+    #contacts .social .email {
+      font-size: 30px;
+      margin-bottom: 5px; }
+      #contacts .social .email a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold; }
+        #contacts .social .email a:hover {
+          color: #009FFD; }
+    #contacts .social .soc {
+      display: inline-block;
+      font-size: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      margin: 20px 10px 10px 10px;
+      font-weight: bold; }
+      #contacts .social .soc:hover, #contacts .social .soc:focus {
+        background: #009FFD;
+        color: #ffffff; }
+      #contacts .social .soc a {
+        display: block;
+        text-decoration: none;
+        color: #010101;
+        padding: 7px 12px; }
+        #contacts .social .soc a i {
+          transition: all 0s;
+          margin-right: 5px; }
+        #contacts .social .soc a:hover {
+          color: #ffffff; }
+
+footer .copy {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: #010101;
+  margin: 10px 0; }
+
+#scroll-to-top {
+  position: fixed;
+  opacity: 0.6;
+  background: #009FFD;
+  border-radius: 10px;
+  width: 47px;
+  height: 45px;
+  right: 20px;
+  bottom: 20px;
+  padding: 7px 10px 10px;
+  transition: all 0s; }
+  #scroll-to-top i {
+    color: #ffffff;
+    transition: all 0s; }
+  #scroll-to-top:hover {
+    opacity: 1; }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #about p {
+    font-size: 25px; }
+
+  #portfolio .project-caption-top {
+    font-size: 17px; }
+  #portfolio .project-caption-down {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=main.css.map */
