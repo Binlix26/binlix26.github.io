@@ -126,6 +126,7 @@ body {
     #portfolio .project-wrap a img {
       width: 100%;
       min-height: 250px;
+      max-height: 270px;
       border-radius: 10px 10px 0 0; }
     #portfolio .project-wrap a span {
       transition: all 0s; }
