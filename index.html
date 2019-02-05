@@ -1,284 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Personal Portfolio Website of Bin Li</title>
-    <link rel="stylesheet" href="assets/css-lib/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css-lib/font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css-lib/animate.css">
-    <link rel="stylesheet" href="assets/scss/main.css">
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <link rel="stylesheet" href="assets/css-lib/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css-lib/font-awesome-4.6.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css-lib/animate.css" />
+    <link rel="stylesheet" href="assets/scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#welcome">Bin Li</a>
-            </div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#welcome">Bin Li</a>
+          </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#welcome">Home</a></li>
-                    <li><a class="page-scroll" href="#about">About Me</a></li>
-                    <li><a class="page-scroll" href="#portfolio">Projects</a></li>
-                    <li><a class="page-scroll" href="#contacts">Contacts</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="page-scroll" href="#welcome">Home</a></li>
+              <li><a class="page-scroll" href="#about">About Me</a></li>
+              <li><a class="page-scroll" href="#portfolio">Projects</a></li>
+              <li><a class="page-scroll" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
 
-    <section id="welcome">
+      <section id="welcome">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>I'm <span>Bin Li</span></h1>
-                    <hr/>
-                    <span>Sofeware Engineer/Developer</span>
-                    <h2>Welcome to my Portfolio Website</h2>
-                    <a href="#about" class="btn btn-warning page-scroll"> What about me? </a>
-                </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>I'm <span>Bin Li</span></h1>
+              <hr />
+              <span>Sofeware Engineer/Developer</span>
+              <h2>Welcome to my Portfolio Website</h2>
+              <a href="#about" class="btn btn-warning page-scroll">
+                What about me?
+              </a>
             </div>
+          </div>
         </div>
+      </section>
+    </header>
+
+    <section id="footprint">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="num">2</span>
+            <span class="txt">years of experience</span>
+          </div>
+          <div class="col-sm-4">
+            <span class="num">9</span>
+            <span class="txt">projects in which I participated</span>
+          </div>
+          <div class="col-sm-4">
+            <span class="num">7</span>
+            <span class="txt">development tools I use</span>
+          </div>
+        </div>
+      </div>
     </section>
-</header>
 
-
-<section id="footprint">
-    <div class="container">
+    <section id="about">
+      <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <span class="num">17</span>
-                <span class="txt">months of experience</span>
-            </div>
-            <div class="col-sm-4">
-                <span class="num">6</span>
-                <span class="txt">projects in which I participated</span>
-            </div>
-            <div class="col-sm-4">
-                <span class="num">5</span>
-                <span class="txt">development tools I use</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <h2 class="section-titles">About me</h2>
+          <h2 class="section-titles">About me</h2>
         </div>
 
         <div class="row">
+          <!--   text-center is here to make about.image center-->
+          <div class="col-sm-4 col-sm-push-8 text-center">
+            <img
+              src="assets/image/about.jpg"
+              alt="Bin Li"
+              class="img-thumbnail"
+            />
+            <span>Bin Li</span>
+          </div>
 
-            <!--   text-center is here to make about.image center-->
-            <div class="col-sm-4 col-sm-push-8 text-center">
-                <img src="assets/image/about.jpg" alt="Bin Li" class="img-thumbnail"/>
-                <span>Bin Li, 26</span>
-            </div>
+          <div class="col-sm-8 col-sm-pull-4">
+            <p>
+              Hi! My name is Bin Li, I am seeking a career as a Software
+              Developer in New Zealand. I have one year and a half experience
+              working with HTML, CSS, Javascript, Java to do whatever it takes
+              to keep the clients happy. I spend some of my spare time learning more coding stuff and building projects, so I have a better chance of seizing the
+              opportunity when it comes.
+            </p>
 
-            <div class="col-sm-8 col-sm-pull-4">
-                <p>
-                    Hi! My name is Bin Li, I am seeking a career as a Software Developer in New Zealand. I have one year and a half experience working with HTML, CSS, Javascript, Java to do whatever it takes to keep the clients happy.
-                    I spend some of my spare time to learn more about coding stuff so I have a better chance of seizing the opportunity when it comes.
-                </p>
+            <p>
+              <b>My skills:</b> HTML, CSS / SASS, JavaScript / ES6, React, Node.js, Java, Spring MVC, PostgreSQL, SQL, Git
+            </p>
 
-                <p><b>My skills:</b> HTML, CSS / SCSS, JavaScript, Java, Spring MvC, SQL</p>
-
-                <p><b>IDEs and Code editors with which I worked:</b> Eclipse, IntelliJ IDEA, Android Studio, Brackets, VS Code
-                </p>
-
-                <p><b>I'm studying:</b> React, C#, PostgreSQL</p>
-            </div>
-
+            <p>
+              <b>IDEs and Code editors with which I worked:</b> Eclipse,
+              IntelliJ IDEA, Webstorm, Android Studio, Brackets, VS Code,
+              DBeaver
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="portfolio">
-    <div class="container">
+    <section id="portfolio">
+      <div class="container">
         <div class="row">
-            <h2 class="section-titles">Projects</h2>
+          <h2 class="section-titles">Projects</h2>
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <!-- <a href="https://codepen.io/Bin900729/pen/xEZbOy" target="_blank"
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <!-- <a href="https://codepen.io/Bin900729/pen/xEZbOy" target="_blank"
                        title="FreeCodeCamp-Personal Portfolio">
                         <img src="assets/image/quote-machine.jpeg" alt="Webpage Overview">
                         <span class="project-caption-top">Random Quote Machine</span>
                         <span class="project-caption-down">HTML, CSS, jQuery, Bootstrap,Animation, Font-Awesome</span>
                     </a> -->
-                    <a href="https://www.idcardgroup.com/search/go?w=*" target="_blank" title="ID Card Group - 2017">
-                        <img src="assets/image/idcardgroup.png" alt="Webpage Overview">
-                        <span class="project-caption-top">ID Card Group - 2017</span>
-                        <span class="project-caption-down">HTML, CSS, jQuery, JavaScript</span>
-                    </a>   
-                </div>
+              <a
+                href="https://www.idcardgroup.com/search/go?w=*"
+                target="_blank"
+                title="ID Card Group - 2017"
+              >
+                <img
+                  src="assets/image/idcardgroup.png"
+                  alt="Webpage Overview"
+                />
+                <span class="project-caption-top">ID Card Group - 2017</span>
+                <span class="project-caption-down"
+                  >HTML, CSS, jQuery, JavaScript</span
+                >
+              </a>
             </div>
+          </div>
 
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <!-- <a href="https://codepen.io/Bin900729/pen/NRZObp" target="_blank"
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <!-- <a href="https://codepen.io/Bin900729/pen/NRZObp" target="_blank"
                        title="FreeCodeCamp-Personal Portfolio">
                         <img src="assets/image/weather.jpeg" alt="Webpage Overview">
                         <span class="project-caption-top">Local Weather</span>
                         <span class="project-caption-down">HTML, CSS, jQuery, Bootstrap, JavaScript, Animation, Font-Awesome</span>
                     </a> -->
 
-                    <a href="https://www.botanicchoice.com/search/go?w=*" target="_blank" title="Botanic Choice - 2018">
-                        <img src="assets/image/BotanicChoice.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Botanic Choice - 2018</span>
-                        <span class="project-caption-down">HTML, CSS, jQuery, JavaScript</span>
-                    </a>
-                </div>
+              <a
+                href="https://www.botanicchoice.com/search/go?w=*"
+                target="_blank"
+                title="Botanic Choice - 2018"
+              >
+                <img
+                  src="assets/image/BotanicChoice.png"
+                  alt="Webpage Overview"
+                />
+                <span class="project-caption-top">Botanic Choice - 2018</span>
+                <span class="project-caption-down"
+                  >HTML, CSS, jQuery, JavaScript</span
+                >
+              </a>
             </div>
+          </div>
 
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://www.restaurantware.com/search/go?w=disposable" target="_blank" title="Restaurantware Redesign - 2018">
-                        <img src="assets/image/restaurantware.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Restaurantware Redesign - 2018</span>
-                        <span class="project-caption-down">HTML, CSS, jQuery, JavaScript, Infinite Scroll, Magento 2</span>
-                    </a>
-                </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://www.restaurantware.com/search/go?w=disposable"
+                target="_blank"
+                title="Restaurantware Redesign - 2018"
+              >
+                <img
+                  src="assets/image/restaurantware.png"
+                  alt="Webpage Overview"
+                />
+                <span class="project-caption-top"
+                  >Restaurantware Redesign - 2018</span
+                >
+                <span class="project-caption-down"
+                  >HTML, CSS, jQuery, JavaScript, Infinite Scroll, Magento
+                  2</span
+                >
+              </a>
             </div>
+          </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://codepen.io/Bin900729/pen/KNwgar" target="_blank" title="FreeCodeCamp-Personal Portfolio">
-                        <img src="assets/image/Wikipedia-Viewer.jpeg" alt="Webpage Overview">
-                        <span class="project-caption-top">Wikipedia Viewer</span>
-                        <span class="project-caption-down">HTML, CSS, jQuery, Bootstrap, JavaScript, Animation</span>
-                    </a>
-                </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://codepen.io/Bin900729/pen/KNwgar"
+                target="_blank"
+                title="FreeCodeCamp-Personal Portfolio"
+              >
+                <img
+                  src="assets/image/Wikipedia-Viewer.jpeg"
+                  alt="Webpage Overview"
+                />
+                <span class="project-caption-top">Wikipedia Viewer</span>
+                <span class="project-caption-down"
+                  >HTML, CSS, jQuery, Bootstrap, JavaScript, Animation</span
+                >
+              </a>
             </div>
+          </div>
 
-
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://github.com/Binlix26/WebCustomerTracker" target="_blank"
-                       title="FreeCodeCamp-Personal Portfolio">
-                        <img src="assets/image/CRM.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Web Customer Tracker</span>
-                        <span class="project-caption-down">Java, Spring MVC, Hibernate, JSP</span>
-                    </a>
-                </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://github.com/Binlix26/WebCustomerTracker"
+                target="_blank"
+                title="FreeCodeCamp-Personal Portfolio"
+              >
+                <img src="assets/image/CRM.png" alt="Webpage Overview" />
+                <span class="project-caption-top">Web Customer Tracker</span>
+                <span class="project-caption-down"
+                  >Java, Spring MVC, Hibernate, JSP</span
+                >
+              </a>
             </div>
+          </div>
 
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://github.com/Binlix26/SearchTool" target="_blank" title="FreeCodeCamp-Personal Portfolio">
-                        <img src="assets/image/search.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Search Tool</span>
-                        <span class="project-caption-down">JavaFX, JDBC, Inverted Index</span>
-                    </a>
-                </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://github.com/Binlix26/SearchTool"
+                target="_blank"
+                title="FreeCodeCamp-Personal Portfolio"
+              >
+                <img src="assets/image/search.png" alt="Webpage Overview" />
+                <span class="project-caption-top">Search Tool</span>
+                <span class="project-caption-down"
+                  >JavaFX, JDBC, Inverted Index</span
+                >
+              </a>
             </div>
+          </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://github.com/Binlix26/Case_Study_BMC" target="_blank" title="FreeCodeCamp-Personal Portfolio">
-                        <img src="assets/image/home.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Case Study BMC</span>
-                        <span class="project-caption-down">Java, Android</span>
-                    </a>
-                </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://github.com/Binlix26/Case_Study_BMC"
+                target="_blank"
+                title="FreeCodeCamp-Personal Portfolio"
+              >
+                <img src="assets/image/home.png" alt="Webpage Overview" />
+                <span class="project-caption-top">Case Study BMC</span>
+                <span class="project-caption-down">Java, Android</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="project-wrap">
+              <a
+                href="https://github.com/Binlix26/user-front"
+                target="_blank"
+                title="Online Bank Prototype"
+              >
+                <img
+                  src="assets/image/online-bank.png"
+                  alt="Webpage Overview"
+                />
+                <span class="project-caption-top">Online Bank Prototype</span>
+                <span class="project-caption-down"
+                  >Spring Boot, Spring Data, Spring Security, Hibernate, MySQL,
+                  Thymeleaf</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="project-wrap">
+                <a
+                href="https://github.com/Binlix26/smart-brain"
+                target="_blank"
+                title="Online Bank Prototype"
+                >
+                <img
+                    src="assets/image/face-recognition.png"
+                    alt="Webpage Overview"
+                />
+                <span class="project-caption-top">Face Recognition</span>
+                <span class="project-caption-down"
+                    >React.js, Node.js(express.js), Clarifai, PostgreSQL</span
+                >
+                </a>
+            </div>
             </div>
 
-            <div class="col-sm-4">
-                <div class="project-wrap">
-                    <a href="https://github.com/Binlix26/user-front" target="_blank" title="Online Bank Prototype">
-                        <img src="assets/image/online-bank.png" alt="Webpage Overview">
-                        <span class="project-caption-top">Online Bank Prototype</span>
-                        <span class="project-caption-down">Spring Boot, Spring Data, Spring Security, Hibernate, MySQL, Thymeleaf</span>
-                    </a>
-                </div>
-            </div>
-
-            <!--Coming soon-->
-            <div class="col-sm-4">
-                <div class="project-wrap coming-soon">
-
-                    <a href="javascript:void(0);">
-                        <img src="assets/image/coming-soon.jpg" alt="Coming Soon">
-                        <span class="project-caption-top">Coming Soon</span>
-                        <span class="project caption-down">My next project</span>
-                    </a>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
-
-<section id="contacts">
-    <div class="container">
         <div class="row">
-            <h2 class="section-titles">Contacts</h2>
+
+          <!--Coming soon-->
+          <div class="col-sm-4">
+            <div class="project-wrap coming-soon">
+              <a href="javascript:void(0);">
+                <img src="assets/image/coming-soon.jpg" alt="Coming Soon" />
+                <span class="project-caption-top">Coming Soon</span>
+                <span class="project caption-down">My next project</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-titles">Contacts</h2>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 social">
-                <div class="email">
-                    Connect with me via Email:
-                    <a href="javascript:void(0);">LB583119533@outlook.com</a>
-                </div>
-
-                <div class="soc soc-fcc">
-                    <a href="https://www.freecodecamp.com/binlix26" target="_blank"><i class="fa fa-fire"></i>FreeCodeCamp</a>
-                </div>
-
-                <div class="soc soc-git">
-                    <a href="https://github.com/Binlix26" target="_blank"><i class="fa fa-github"></i>GitHub</a>
-                </div>
-
-                <div class="soc soc-fb">
-                    <a href="https://www.facebook.com/profile.php?id=100009931327654" target="_blank"><i
-                            class="fa fa-facebook-square"></i>Facebook</a>
-                </div>
-
-                <div class="soc soc-ln">
-                    <a href="https://www.linkedin.com/in/binlix26/" target="_blank"><i
-                            class="fa fa-linkedin-square"></i>LinkedIn</a>
-                </div>
-
-                <div class="soc soc-tw">
-                    <a href="javascript:void(0);" target="_blank"><i class="fa fa-twitter-square"></i>Twitter</a>
-                </div>
+          <div class="col-sm-12 social">
+            <div class="email">
+              Connect with me via Email:
+              <a href="javascript:void(0);">LB583119533@outlook.com</a>
             </div>
-        </div>
-    </div>
-</section>
 
-<footer>
-    <div class="container">
+            <div class="soc soc-fcc">
+              <a href="https://www.freecodecamp.com/binlix26" target="_blank"
+                ><i class="fa fa-fire"></i>FreeCodeCamp</a
+              >
+            </div>
+
+            <div class="soc soc-git">
+              <a href="https://github.com/Binlix26" target="_blank"
+                ><i class="fa fa-github"></i>GitHub</a
+              >
+            </div>
+
+            <div class="soc soc-fb">
+              <a
+                href="https://www.facebook.com/profile.php?id=100009931327654"
+                target="_blank"
+                ><i class="fa fa-facebook-square"></i>Facebook</a
+              >
+            </div>
+
+            <div class="soc soc-ln">
+              <a href="https://www.linkedin.com/in/binlix26/" target="_blank"
+                ><i class="fa fa-linkedin-square"></i>LinkedIn</a
+              >
+            </div>
+
+            <div class="soc soc-tw">
+              <a href="javascript:void(0);" target="_blank"
+                ><i class="fa fa-twitter-square"></i>Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
         <div class="row">
-            <div class="col-sm-12 copy">
-                Copyright &#0169; Bin Li 2016
-            </div>
+          <div class="col-sm-12 copy">
+            Copyright &#0169; Bin Li 2016
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<a href="#welcome" class="page-scroll" id="scroll-to-top"><i class="fa fa-chevron-up fa-2x"></i></a>
+    <a href="#welcome" class="page-scroll" id="scroll-to-top"
+      ><i class="fa fa-chevron-up fa-2x"></i
+    ></a>
 
-<script src="assets/js/jquery-3.1.0.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.easing.1.3.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/jquery-3.1.0.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
